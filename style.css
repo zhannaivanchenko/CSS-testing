@@ -1,0 +1,65 @@
+button {
+    white-space: nowrap;
+}
+
+.container {
+    display: flex;
+    background-color: lightseagreen;
+    height: 30vh;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.main-nav {
+    /* order: 1; */
+    background-color: blueviolet;
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: left;
+    
+
+
+
+}
+.main-nav ul {
+    
+    display: flex;
+    /* align-items: center; */
+    flex-direction: row;
+   
+
+}
+
+.main-nav li {
+    list-style: none;
+    text-align: center;
+    /* padding: 1rem; */
+    
+    
+}
+
+.main-content {
+    width: 60%;
+    /* order: 2; */
+    background-color: pink;
+  
+
+
+}
+ .main-sidebar {
+    /* flex: 2; */
+  
+    width: 15%;
+    
+}
+
+
+.main-sidebar {
+    order: 3;
+    background-color: lightcoral;
+}
+
+.form-container {
+    margin: 2rem;
+}

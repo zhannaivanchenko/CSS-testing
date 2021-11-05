@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <ul>
+            <li>home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section class="main-content">
+            <p>I am main content here and I want ot show some info here</p>
+        </section>
+       
+        <aside class="main-sidebar" id="sidebar">
+            <p>Contact us any time</p>
+            <button type="button" autofocus id="contact">Contact us</button>
+        </aside>
+        
+    </div>
+    <section class="form-container">
+        <form action="/" method="POST">
+            <input type="text" name="name" id="name" >
+            <input type="text" surname="surname" id="surname">
+            <button>Submit</button>
+            <button type="reset" >Reset</button>
+            <button type="button" onclick="console.log('clicked!');" aria-pressed="true">Non-submmiting</button>
+        </form>
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+             <li>
+               <label for="name">Name:</label>
+               <input type="text" id="name" name="user_name">
+             </li>
+             <li>
+               <label for="mail">E-mail:</label>
+               <input type="email" id="mail" name="user_email">
+             </li>
+             <li>
+               <label for="msg">Message:</label>
+               <textarea id="msg" name="user_message"></textarea>
+             </li>
+            </ul>
+           </form>
+           
+    </section>
+    <script>
+        let item = document.querySelector("button");
+        console.log('item=', item);
+        item.addEventListener('click', function(event) {
+            alert('We shall get in touch with you soon!');
+            event.currentTarget.setAttribute('disabled', true);
+        }, {once: true} );
+    </script>
+</body>
+</html>
